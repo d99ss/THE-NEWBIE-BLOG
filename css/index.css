@@ -1,0 +1,44 @@
+/* <section class="header"> */
+
+.header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    background-image: url('/img/world.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Blog Description Index page*/
+
+.blogDescription {
+    text-align: center;
+}
+
+/* Button */
+
+.button {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 1em;
+    padding: 1em;
+    background-color: white;
+    color: black;
+    border: 2px solid black);
+    border-radius: 5%;
+    transition-duration: 0.4s;
+    text-transform: uppercase;
+}
+
+.button a {
+    color: salmon;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #000000;
+    /* Green */
+    color: rgb(255, 255, 255);
+}

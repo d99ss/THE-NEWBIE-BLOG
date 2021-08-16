@@ -1,0 +1,44 @@
+/* Responsive layout @media queries */
+
+@media all and (max-width: 625px) {
+    .navigation {
+        flex-flow: column wrap;
+        padding: 0;
+        margin: 0;
+    }
+    .grid-blog {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media all and (max-width: 720px) {
+    .navigation li {
+        padding-left: 1em;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .navigation {
+        justify-content: space-around;
+        padding-left: 1em;
+    }
+    .grid-blog {
+        grid-template-columns: 30% 66% 100% 100%;
+        grid-template-areas: 'card grid-section' 'grid-figure grid-figure' 'blog-text blog-text';
+    }
+    .card {
+        grid-area: card;
+    }
+    .grid-section {
+        grid-area: grid-section;
+    }
+    .grid-figure {
+        grid-area: grid-figure;
+    }
+    .blog-text {
+        grid-area: blog-text;
+    }
+    .social-media>li {
+        flex: 0 1 20%;
+    }
+}
